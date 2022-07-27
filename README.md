@@ -4,9 +4,9 @@
 
 ## Project Overview
 
-This project is all about operationalize a Machine Learning Microservice API `app.py`—that serves out predictions (inference) about housing prices through API calls.
+This project is all about operationalizing a Machine Learning Microservice API `app.py`—that serves out predictions (inference) about housing prices through API calls.
 
-Using `sklearn` model that has been trained to predict housing prices in Boston according to several features, such as average rooms in a home and data about highway access, teacher-to-pupil ratios, and so on. The Data set is gotten from[the data source site](https://www.kaggle.com/c/boston-housing). 
+Using `sklearn` model that has been trained to predict housing prices in Boston according to several features, such as average rooms in a home and data about highway access, teacher-to-pupil ratios, and so on. The Data set is gotten from the [data source site](https://www.kaggle.com/c/boston-housing). 
 
 ## INSTRUCTIONS ON HOW TO RUN THE APP
 
@@ -40,7 +40,7 @@ source .devops/bin/activate
 #### Running the app in Kubernetes:
 3. Run `./run_kubernetes.sh` then run `./make_predicton.sh` to make predictions.
 
-## EXPLANATION OF FILES IN THE REPOSITORY
+## EXPLANATION OF THE FILES IN THE REPOSITORY
 * `.circleci/config.yml` contains the config file for cirleci for CI integration.
 * `output_txt_files` contains the prediction outputs for docker run and kubernates run after `make_prediction.sh` script was run.
 * `app.py` contains the source code of the application
