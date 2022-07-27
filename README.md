@@ -41,6 +41,26 @@ source .devops/bin/activate
 3. Run `./run_kubernetes.sh` then run `./make_predicton.sh` to make predictions.
 
 ## EXPLANATION OF THE FILES IN THE REPOSITORY
+### Folder Arrangement
+```
+.
+├── Dockerfile
+├── Makefile
+├── README.md
+├── app.py
+├── hadolint
+├── make_prediction.sh
+├── model_data
+│   ├── boston_housing_prediction.joblib
+│   └── housing.csv
+├── output_txt_files
+│   ├── docker_out.txt
+│   └── kubernetes_out.txt
+├── requirements.txt
+├── run_docker.sh
+├── run_kubernetes.sh
+└── upload_docker.sh
+```
 * `.circleci/config.yml` contains the config file for cirleci for CI integration.
 * `output_txt_files` contains the prediction outputs for docker run and kubernates run after `make_prediction.sh` script was run.
 * `app.py` contains the source code of the application
