@@ -8,7 +8,7 @@ dockerpath="elokac/ml-app:v1.0.0"
 
 # Step 2
 # Run the Docker Hub container with kubernetes
-kubectl create deploy ml-app --image=$dockerpath
+kubectl run ml-app --image=$dockerpath
 
 
 # Step 3:
@@ -17,5 +17,5 @@ kubectl get pods
 
 # Step 4:
 # Forward the container port to a host
-kubectl port-forward ml-app 5000:80
+kubectl port-forward ml-app 8000:80
 
